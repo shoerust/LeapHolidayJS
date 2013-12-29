@@ -162,6 +162,7 @@ function main() {
   		  c.arc(x, y, 10, 0, Math.PI*2); 
   		  c.closePath();
   		  c.fill();
+        document.getElementById('selector').style.backgroundColor = 'rgb(' + color[0] + ', ' + color[1] + ', ' + color[2] + ')';
 
 	    }
     }

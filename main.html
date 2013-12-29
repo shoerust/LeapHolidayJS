@@ -1,13 +1,39 @@
 <html>
 <head>
   <style>
-	  
+	  body {
+	  	background-color:#ccc;
+	  	color:white;
+	  }
 	  div {
 	  	width:400px;
 	  	text-align: center;
 	  	margin-left: auto;
 	  	margin-right: auto;
 	  }
+
+	  div.form {
+	  	width:350px;
+	  }
+
+	  input, button {
+	  	background-color: white;
+	  	border-color: grey;
+	  }
+
+	  button {
+	  	float:right;
+	  }
+
+	  form {
+	  	float:left;
+	  }
+
+	  select {
+	  	background:transparent;
+	  	background-color: white;
+	  }
+
 	  #canvas{
 	   	padding-left: 0;
 	    padding-right: 0;
@@ -29,11 +55,13 @@
 <div>
 	<h1>LeapHoliday</h1>
 	<p>Leap Motion controller for Holiday by MooresCloud</p>
-	<form>
-	  <span>Holidays: </span><select id="selector"></select>
-	  <input type="button" value="Scan" id="thebutton" style="width:100px;">
-	</form>  
-	 <button>Start</button>
+	<div class="form">
+		<form>
+		  <span>Holidays: </span><select id="selector"></select>
+		  <input type="button" value="Scan" id="thebutton" style="width:100px;">
+		</form>  
+		 <button>Start</button>
+	</div>
 </div>
 <canvas id="canvas"></canvas>
 <script src="main.js"></script>
