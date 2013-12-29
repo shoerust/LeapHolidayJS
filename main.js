@@ -152,7 +152,7 @@ function main() {
 	      var x = fingerPos[0];
 	      var y = fingerPos[1];
 	      var color = c.getImageData(x, y, 1, 1).data;
-	      for (var i = 10; i < 160; i++) {
+	      for (var i = 0; i < 150; i++) {
 	      	hol.setglobe(i, color[0], color[1], color[2]); 
 	      }
         //console.log(color[0] + ' ' + color[1] + ' ' + color[2]);
